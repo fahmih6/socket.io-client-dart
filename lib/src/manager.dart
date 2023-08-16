@@ -5,8 +5,8 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:logging/logging.dart';
-import 'package:socket_io_common/src/util/event_emitter.dart';
-import 'package:socket_io_common/src/parser/parser.dart';
+import 'package:socket_io_common_shipper/src/util/event_emitter.dart';
+import 'package:socket_io_common_shipper/src/parser/parser.dart';
 import 'package:socket_io_client_shipper/src/on.dart';
 import 'package:socket_io_client_shipper/src/socket.dart';
 import 'package:socket_io_client_shipper/src/engine/socket.dart'

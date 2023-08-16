@@ -6,9 +6,10 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:logging/logging.dart';
-import 'package:socket_io_common/src/util/event_emitter.dart';
+import 'package:socket_io_common_shipper/src/util/event_emitter.dart';
 import 'package:socket_io_client_shipper/src/engine/parseqs.dart';
-import 'package:socket_io_common/src/engine/parser/parser.dart' as parser;
+import 'package:socket_io_common_shipper/src/engine/parser/parser.dart'
+    as parser;
 import 'package:socket_io_client_shipper/src/engine/transport/polling_transport.dart';
 import './transport/transport.dart';
 

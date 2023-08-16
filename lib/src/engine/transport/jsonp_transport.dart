@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:html';
-import 'dart:js' hide JsArray;
+// import 'dart:js' hide JsArray;
 import 'package:js/js_util.dart';
-import 'package:socket_io_client/src/engine/transport/polling_transport.dart';
+import 'package:socket_io_client_shipper/src/engine/transport/polling_transport.dart';
 
 import 'js_array.dart';
 

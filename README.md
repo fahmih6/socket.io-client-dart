@@ -4,14 +4,15 @@ Port of awesome JavaScript Node.js library - [Socket.io-client v2.0.1~v3.0.3](ht
 
 ### Version info:
 
-| socket.io-client-dart | Socket.io Server
--------------------|----------------
-`v0.9.*` ~ `v1.* ` | `v2.*`
-`v2.*`             | `v3.*` & `v4.*`
+| socket.io-client-dart | Socket.io Server |
+| --------------------- | ---------------- |
+| `v0.9.*` ~ `v1.* `    | `v2.*`           |
+| `v2.*`                | `v3.*` & `v4.*`  |
 
 ## Usage
 
 **Dart Server**
+
 ```dart
 import 'package:socket_io/socket_io.dart';
 
@@ -36,10 +37,12 @@ main() {
   io.listen(3000);
 }
 ```
+
 **Dart Client**
+
 ```dart
 
-import 'package:socket_io_client/socket_io_client.dart' as IO;
+import 'package:socket_io_client_shipper/socket_io_client_shipper.dart' as IO;
 
 main() {
   // Dart client
@@ -71,7 +74,7 @@ Socket socket = io('http://localhost:3000',
 <b>socket.connect();</b>
 </pre>
 
-Note that `.connect()` should not be called if `autoConnect: true` 
+Note that `.connect()` should not be called if `autoConnect: true`
 (by default, it's enabled to true), as this will cause all event handlers to get registered/fired twice. See [Issue #33](https://github.com/rikulo/socket.io-client-dart/issues/33).
 
 ### Update the extra headers
@@ -139,7 +142,7 @@ socket.on('eventName', (data) {
 ## Usage (Flutter)
 
 In Flutter env. not (Flutter Web env.) it only works with `dart:io` websocket,
- not with `dart:html` websocket or Ajax (XHR), so in this case
+not with `dart:html` websocket or Ajax (XHR), so in this case
 you have to add `setTransports(['websocket'])` when creates the socket instance.
 
 For example,
@@ -241,9 +244,11 @@ void main() {
   Please use `socket.dispose()` instead of `socket.close()` or `socket.disconnect()` to solve the memory leak issue on iOS.
 
 ### Connect_error on MacOS with SocketException: Connection failed
-* Refer to https://github.com/flutter/flutter/issues/47606#issuecomment-568522318 issue.
-           
+
+- Refer to https://github.com/flutter/flutter/issues/47606#issuecomment-568522318 issue.
+
 By adding the following key into the to file `*.entitlements` under directory `macos/Runner/`
+
 ```
 <key>com.apple.security.network.client</key>
 <true/>
@@ -252,11 +257,11 @@ By adding the following key into the to file `*.entitlements` under directory `m
 For more details, please take a look at https://flutter.dev/desktop#setting-up-entitlements
 
 ### Can't connect socket server on Flutter with Insecure HTTP connection
-* Refer to https://flutter.dev/docs/release/breaking-changes/network-policy-ios-android
+
+- Refer to https://flutter.dev/docs/release/breaking-changes/network-policy-ios-android
 
 The HTTP connections are disabled by default on iOS and Android, so here is a workaround to this issue,
 which mentioned on [stack overflow](https://stackoverflow.com/a/65730723)
-
 
 ## Notes to Contributors
 
@@ -267,6 +272,7 @@ If you'd like to contribute back to the core, you can [fork this repository](htt
 If you are new to Git or GitHub, please read [this guide](https://help.github.com/) first.
 
 Contribution of all kinds is welcome. Please read [Contributing.md](https://github.com/rikulo/socket.io-client-dart/blob/master/contributing.md) in this repository.
+
 ## Who Uses
 
 - [Quire](https://quire.io) - a simple, collaborative, multi-level task management tool.

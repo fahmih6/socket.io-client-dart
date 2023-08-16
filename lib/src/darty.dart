@@ -3,7 +3,7 @@
 // Author: jumperchen<jumperchen@potix.com>
 
 import 'package:socket_io_client_shipper/socket_io_client.dart';
-import 'package:socket_io_common_shipper/src/util/event_emitter.dart';
+import '../../../socket_io_common_shipper/src/util/event_emitter.dart';
 
 /// Default event listeners for dart way API.
 extension DartySocket on Socket {

@@ -13,7 +13,7 @@ import 'package:socket_io_client_shipper/src/engine/parseqs.dart';
 /// Copyright (C) 2017 Potix Corporation. All Rights Reserved.
 import 'package:logging/logging.dart';
 import 'package:socket_io_client_shipper/src/engine/transport/transport.dart';
-import 'package:socket_io_common_shipper/src/engine/parser/parser.dart';
+import '../../../socket_io_common_shipper/src/engine/parser/parser.dart';
 
 final Logger _logger = Logger('socket_io:transport.PollingTransport');
 

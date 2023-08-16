@@ -10,10 +10,6 @@ environment:
 
 dependencies:
   logging: "^1.0.1"
-  socket_io_common_shipper:
-    git:
-      url: https://github.com/fahmih6/socket_io_common_shipper.git
-      ref: 66fcdce4c818f8a646df265d0473a415e8851246
   js: "^0.6.3"
 
 dev_dependencies:
